@@ -1,1 +1,1 @@
-#Creating a slack clone
+#Creating a slack clone using react.js
