@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import  {App,SignIn} from './componentA';
+import { App } from './components';
+import UserProvider from './providers/UserProvider';
 
 ReactDOM.render(
-    <SignIn /> ,
-   document.getElementById('root')
+  <UserProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </UserProvider>,
+  document.getElementById('root')
 );
-
